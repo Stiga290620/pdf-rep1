@@ -1,0 +1,9 @@
+The get_string_width method allows determining the length of a string in the current font, which is used here to calculate the position and the width of the frame surrounding the title. Then colors are set (via set_draw_color, set_fill_color and set_text_color) and the thickness of the line is set to 1 mm (against 0.2 by default) with set_line_width. Finally, we output the cell (the last parameter to true indicates that the background must be filled).
+
+df.query("col1 != 'a1' | year != 2011")
+
+          col1 col2
+year rank
+2011 2      b1   b2
+2012 1      c1   b2
+     2      a1   c2
